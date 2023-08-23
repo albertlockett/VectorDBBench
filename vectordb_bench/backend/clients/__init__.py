@@ -16,8 +16,8 @@ from .weaviate_cloud.weaviate_cloud import WeaviateCloud
 from .qdrant_cloud.qdrant_cloud import QdrantCloud
 from .zilliz_cloud.zilliz_cloud import ZillizCloud
 from .pgvector.pgvector import PgVector
-from .redis.redis import Redis
-from .chroma.chroma import ChromaClient
+from .lancedb.lancedb import LanceDB
+from .lancedb_cloud.lancedb_cloud import LanceDBCloud
 
 class DB(Enum):
     """Database types
@@ -38,8 +38,8 @@ class DB(Enum):
     QdrantCloud = "QdrantCloud"
     WeaviateCloud = "WeaviateCloud"
     PgVector = "PgVector"
-    Redis = "Redis"
-    Chroma = "Chroma"
+    LanceDB = "LanceDB"
+    LanceDBCloud = "LanceDBCloud"
 
 
     @property
@@ -55,8 +55,8 @@ db2client = {
     DB.QdrantCloud: QdrantCloud,
     DB.Pinecone: Pinecone,
     DB.PgVector: PgVector,
-    DB.Redis: Redis,
-    DB.Chroma: ChromaClient
+    DB.LanceDB: LanceDB,
+    DB.LanceDBCloud: LanceDBCloud,
 }
 
 for db in DB:
