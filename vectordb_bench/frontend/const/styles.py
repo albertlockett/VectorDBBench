@@ -43,6 +43,8 @@ DB_TO_ICON = {
     DB.QdrantCloud: "https://assets.zilliz.com/qdrant_b691674fcd.png",
     DB.WeaviateCloud: "https://assets.zilliz.com/weaviate_4f6f171ebe.png",
     DB.PgVector: "https://assets.zilliz.com/PG_Vector_d464f2ef5f.png",
+    DB.Redis: "https://assets.zilliz.com/Redis_Cloud_74b8bfef39.png",
+    DB.Chroma: "https://assets.zilliz.com/chroma_ceb3f06ed7.png", 
     DB.LanceDB: "https://i.imgur.com/KWJ4i03.png",
     DB.LanceDBCloud: "https://i.imgur.com/KWJ4i03.png",
 }
@@ -57,6 +59,7 @@ COLOR_MAP = {
     DB.QdrantCloud.value: "#D91AD9",
     DB.WeaviateCloud.value: "#20C997",
     DB.PgVector.value: "#4C779A",
+    DB.Redis.value: "#0D6EFD",
     DB.LanceDB.value: "#615eff",
     DB.LanceDBCloud.value: "#615eff",
 }
